@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- title  -->
+    <title>Wallet</title>
+
+    <!-- bootstrap 5.3    -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- fontawsome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/styles.css"> <!--Styles-->
+
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="top_sbannar">
+                    <div>
+                        <a href="index.html"><i class="fa-solid fa-angle-left"></i></a>
+                    </div>
+                </div>
+                <div class="scaner_section">
+                    <div>
+                       
+                        <div>
+                            <div id="reader"></div>
+                        </div>
+                        <div class="d-none">
+                            <div class="" style="padding: 30px">
+                                <h4>Scan Result </h4>
+                                <a id="result" target="_parent" class="result">
+                                  Result goes here
+                                </a>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!--Jquery Cdn-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script> <!--Bootstrap-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5-qrcode/2.2.0/html5-qrcode.min.js"></script>
+    <script>
+        // When scan is successful fucntion will produce data
+        var dd = document.getElementById("result");
+        var dd2 = document.getElementById("link");
+
+        function onScanSuccess(qrCodeMessage) {
+            var code = qrCodeMessage;
+            dd.innerHTML = '<p class="result">' +qrCodeMessage  + "</p>";  
+            dd.setAttribute("href", code);
+            dd.click();
+
+        }
+
+        // When scan is unsuccessful fucntion will produce error message
+        function onScanError(errorMessage) {
+            // Handle Scan Error
+        }
+
+        // Setting up Qr Scanner properties
+        var html5QrCodeScanner = new Html5QrcodeScanner("reader", {
+            fps: 10,
+            qrbox: 250
+        });
+
+        // in
+        html5QrCodeScanner.render(onScanSuccess, onScanError);
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Swap</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .image-container {
+            display: inline-block;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img class="image1" src="images/currency_icon/brics_icon.png" width="20px" alt="Image 1">
+    </div>
+    <div class="image-container">
+        <img class="image2" src="images/currency_icon/btc.png" width="20px" alt="Image 2">
+    </div>
+    <button class="swapButton">Swap Images</button>
+
+    <script>
+        $(document).ready(function () {
+            $(".swapButton").click(function () {
+                var src1 = $(".image1").attr("src");
+                var src2 = $(".image2").attr("src");
+
+                $(".image1").attr("src", src2);
+                $(".image2").attr("src", src1);
+            });
+        });
+    </script>
+</body>
+</html>
