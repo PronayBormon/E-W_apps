@@ -660,10 +660,11 @@ color: red;
     border: none;
     border-radius: 5px;
 }
-.btn_cancle{    
-    background: transparent;        
-    border: none;        
+.btn_cancle{
+    background: transparent;
+    border: none;
     color: #7a7777;
+    font-size: 12px;
 }
 
 /* footer part start here  */
@@ -1748,6 +1749,10 @@ overflow: auto;
 
 scrollbar-width: none;
 }
+.message_part ul button{
+    background-color: transparent;
+    border: none;
+}
 .m_box p{
 
 overflow: hidden;
@@ -1808,7 +1813,30 @@ margin-left: 10px;
 .m_box.read h6{
     color: #000;
 }
-.m_box.read p{
+.btn_read_message{
     color: #adadad;
 }
+.m_box.read p {
+    color: #000;
+}
 /* notification page end here  */
+
+.m_contents{
+
+}
+.m_contents h6{
+
+font-size: 14px;
+}
+.m_div{
+
+margin-top: 10px;
+}
+.m_div p{
+    
+font-size: 13px;
+    
+max-height: 40vh;
+    
+overflow: auto;
+}

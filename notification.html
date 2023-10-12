@@ -57,35 +57,39 @@
                 <div class="transection_part">
                     <ul>
                         <li>
-                            <div class="transection_box">
-                                <div class="ico_title ">
-                                    <ion-icon name="checkmark-outline"></ion-icon>
-                                    <div>
-                                        <h6>USDT: 100 $50KAEID</h6>
-                                        <p>jhsadfiweqw34289nd9a8syrqwnd</p>
+                            <a type="button" class="btn_read_message" data-bs-toggle="modal" data-bs-target="#m_modal">
+                                <div class="transection_box">
+                                    <div class="ico_title ">
+                                        <ion-icon name="checkmark-outline"></ion-icon>
+                                        <div>
+                                            <h6>USDT: 100 $50KAEID</h6>
+                                            <p>jhsadfiweqw34289nd9a8syrqwnd</p>
+                                        </div>
+                                    </div>
+                                    <div class="date_coin">
+                                        <h5>09-21- 02:45</h5>
+                                        <span>Tron</span>
                                     </div>
                                 </div>
-                                <div class="date_coin">
-                                    <h5>09-21- 02:45</h5>
-                                    <span>Tron</span>
-                                </div>
-                            </div>
+                            </a>
                         </li>
                         <li>
-                            <div class="transection_box ">
-                                <!-- if message already read add class read  -->
-                                <div class="ico_title read">
-                                    <ion-icon name="checkmark-outline"></ion-icon>
-                                    <div>
-                                        <h6>USDT: 100 $50KAEID</h6>
-                                        <p>jhsadfiweqw34289nd9a8syrqwnd</p>
+                            <a type="button" class="btn_read_message" data-bs-toggle="modal" data-bs-target="#m_modal">
+                                <div class="transection_box ">
+                                    <!-- if message already read add class read  -->
+                                    <div class="ico_title read">
+                                        <ion-icon name="checkmark-outline"></ion-icon>
+                                        <div>
+                                            <h6>USDT: 100 $50KAEID</h6>
+                                            <p>jhsadfiweqw34289nd9a8syrqwnd</p>
+                                        </div>
+                                    </div>
+                                    <div class="date_coin">
+                                        <h5>09-21- 02:45</h5>
+                                        <span>Tron</span>
                                     </div>
                                 </div>
-                                <div class="date_coin">
-                                    <h5>09-21- 02:45</h5>
-                                    <span>Tron</span>
-                                </div>
-                            </div>
+                            </a>
                         </li>
 
                     </ul>
@@ -95,23 +99,30 @@
                 <div class="message_part">
                     <ul>
                         <li>
-                            <div class="m_box">
-                                <div class="ttl_m">
-                                    <h6>Lorem ipsum.</h6>
-                                    <p>10-03 13:35</p>
+                            <a type="button" class="btn_read_message" data-bs-toggle="modal" data-bs-target="#m_modal">
+                                <div class="m_box">
+                                    <div class="ttl_m">
+                                        <h6>Lorem ipsum.</h6>
+                                        <p>10-03 13:35</p>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ad earum
+                                        dignissimos.</p>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ad earum dignissimos.</p>
-                            </div>
+                            </a>
                         </li>
                         <li>
                             <!-- if message read then add class read  -->
-                            <div class="m_box read">
-                                <div class="ttl_m">
-                                    <h6>Lorem ipsum.</h6>
-                                    <p>10-03 13:35</p>
+                            <button type="button" class="btn_read_message" data-bs-toggle="modal"
+                                data-bs-target="#m_modal">
+                                <div class="m_box read">
+                                    <div class="ttl_m">
+                                        <h6>Lorem ipsum.</h6>
+                                        <p>10-03 13:35</p>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ad earum
+                                        dignissimos.</p>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ad earum dignissimos.</p>
-                            </div>
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -120,6 +131,28 @@
     </section>
     <!-- main part end here  -->
 
+
+
+    <!-- Modal -->
+    <div class="modal fade " id="m_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="m_contents">
+                        <h6>Messages titles</h6>
+                        <div class="m_div">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis suscipit odio dolorem!
+                                Laudantium dolore at perferendis. Aperiam vitae sequi eligendi dolor, maiores quas saepe
+                                tenetur ratione? Facilis totam dicta dolores!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex align-items-center">
+                    <button type="button" class="btn btn_backup" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
