@@ -273,7 +273,7 @@ top: 0;
     /* background: #0b96cd; */
 }
 ._layer img{
-    width: 20px;
+    width: 23px;
     height: auto;
     margin-right: 10px;
     /* filter: drop-shadow(2px 4px 6px #8d8d8d91); */
@@ -1424,11 +1424,11 @@ border-radius: 5px;
 
 border: 1px solid #ededed;
 
-padding: 5px 20px;
+padding: 5px 15px;
 
 outline: 0 !important;
 }
-.in_group ion-icon{
+.in_group ion-icon,.in_group i{
 
 position: absolute;
 
@@ -1462,3 +1462,56 @@ margin: 10px 0px;
 }
 
 /* enter password par end here  */
+
+.c_name{
+    
+font-size: 10px !important;
+    
+text-align: start !important;
+}
+.f_buttons{
+
+}
+.f_buttons p{
+
+font-size: 12px;
+
+margin-bottom: 10px;
+
+margin-top: 20px;
+}
+.f_buttons button{
+    
+}
+.footer_btns{
+
+display: flex;
+
+justify-content: space-between;
+
+align-items: center;
+
+padding: 10px 0px;
+}
+.footer_btns a{
+
+width: 100%;
+
+text-align: center;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+font-size: 12px;
+
+border-right: 1px solid #ededed;
+}
+.footer_btns a ion-icon{
+    
+font-size: 16px;
+    
+margin-right: 5px;
+}
