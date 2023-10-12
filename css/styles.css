@@ -239,7 +239,6 @@ top: 0;
     color: #000;
 }
 .layer{
-
 }
 .layer h6{
     font-size: 13px;
@@ -815,7 +814,7 @@ text-align: center;
 /* coin exchange part start here  */
 .main_part{
     
-background: #fff;
+/* background: #fff; */
 }
 .top_m_txt{
 
