@@ -815,6 +815,7 @@ text-align: center;
 /* coin exchange part start here  */
 .main_part{
     
+background: #fff;
 }
 .top_m_txt{
 
@@ -1614,3 +1615,201 @@ font-size: 14px;
     padding: 10px;        
     border-radius: 10px;
 }
+.notice_btns{
+
+display: flex;
+
+justify-content: space-between;
+
+padding: 10px 20px;
+
+background: #fff;
+
+width: 100%;
+
+border-bottom: 1px solid #ededed;
+}
+
+/* notification page start here  */
+.notice_btns button{
+    position: relative;
+    background: transparent;
+    padding: 5px 0px;
+    border: none;
+    font-size: 12px;
+}
+.notice_btns button::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 0%;
+    background-color: #000;
+    transition: .4s all ease-in-out;
+}
+.notice_btns button.active:after{
+    width: 30%;
+}
+.transection_part{
+    display: none;
+}
+.transection_part ul li{
+
+box-shadow: 0 0 5px #c5c5c566;
+
+margin: 8px 0px;
+}
+.transection_part ul{
+
+height: 90vh;
+
+overflow: auto;
+
+padding-bottom: 40px;
+}
+.transection_box{
+
+display: flex;
+
+align-items: center;
+
+justify-content: space-between;
+
+padding: 10px 5px;
+}
+.transection_box ion-icon{
+
+background: #44bc79;
+
+color: #fff;
+
+border-radius: 50px;
+
+padding: 2px;
+
+font-size: 12px;
+
+margin-right: 5px;
+
+box-shadow: 0 0 10px #a09d9d73;
+}
+.ico_title{
+
+display: flex;
+
+align-items: start;
+}
+.transection_box h6{
+
+font-size: 12px;
+
+color: #6a7de5;
+}
+.ico_title p{
+
+font-size: 12px;
+
+color: #adadad;
+}
+.date_coin{
+
+text-align: end;
+}
+.date_coin h5{
+
+font-size: 11px;
+
+color: #adadad;
+}
+.date_coin span{
+    
+font-size: 12px;
+    
+color: #5b5959;
+}
+.ico_title.read h6{
+    color: #000000b3 !important;
+}
+.message_part{
+
+}
+.message_part ul li{
+
+margin: 5px 0px;
+
+box-shadow: 0 0 5px #edededb3;
+}
+.message_part ul{
+
+height: 80vh;
+
+overflow: auto;
+
+scrollbar-width: none;
+}
+.m_box p{
+
+overflow: hidden;
+
+display: -webkit-box;
+
+-webkit-line-clamp: 1; /* number of lines to show */
+
+line-clamp: 1;
+
+-webkit-box-orient: vertical;
+
+font-size: 12px;
+
+margin-top: 0px;
+
+color: #3F51B5;
+}
+.ttl_m{
+
+display: flex;
+
+justify-content: space-between;
+}
+.ttl_m h6{
+
+font-size: 12px;
+
+overflow: hidden;
+
+display: -webkit-box;
+
+-webkit-line-clamp: 1; /* number of lines to show */
+
+line-clamp: 1;
+
+-webkit-box-orient: vertical;
+
+color: #3F51B5;
+}
+.ttl_m p{
+    
+font-size: 12px;
+    
+color: #808080;
+    
+margin: 0;
+    
+min-width: fit-content;
+    
+margin-left: 10px;
+}
+.m_box{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+.m_box.read h6{
+    color: #000;
+}
+.m_box.read p{
+    color: #adadad;
+}
+/* notification page end here  */
