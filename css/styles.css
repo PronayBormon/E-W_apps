@@ -1121,7 +1121,7 @@ margin-top: 5px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding-top: 10px;
-    height: 40vh;
+    height: 50vh;
 }
 
 /* settings modal end here  */
@@ -1416,7 +1416,7 @@ padding: 10px 0px;
 
 position: relative;
 }
-.in_group input{
+.in_group input,.in_group textarea{
 
 width: 100%;
 
@@ -1427,6 +1427,9 @@ border: 1px solid #ededed;
 padding: 5px 15px;
 
 outline: 0 !important;
+}
+.in_group label{
+    font-size: 12px;
 }
 .in_group ion-icon,.in_group i{
 
@@ -1514,4 +1517,100 @@ border-right: 1px solid #ededed;
 font-size: 16px;
     
 margin-right: 5px;
+}
+.add_w_option h6{
+
+margin-top: 15px;
+
+font-size: 12px;
+}
+.add_w_option .minor_fee{    
+    background: #fff;        
+    box-shadow: 0px -1px 5px #ededed;        
+    padding: 10px 5px;        
+    margin-top: 10px;
+}
+.layer_  input{
+    padding: 10px 15px;
+    font-size: 12px;
+}
+.settings_ .checkbox.style-e .checkbox__checkmark{
+    top: -11px;
+}
+.net_detection{
+
+margin-top: 10px;
+
+height: 90vh;
+
+overflow: auto;
+
+padding-bottom: 40px;
+}
+.top_net_detection{
+
+background: #0af;
+
+padding: 10px;
+
+border-radius: 10px;
+
+margin-bottom: 10px;
+}
+.net_detection ul{
+
+}
+.net_detection ul li{
+
+}
+.net_details{
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.net_details h5{
+
+font-size: 14px;
+}
+.net_details p{  
+    font-size: 12px;    
+    margin-top: 10px;    
+    width: 100%;
+}
+.top_net_detection h6{
+    font-size: 14px;
+    color: #fff;
+}
+.top_net_detection p{    
+    font-size: 12px;        
+    margin-top: 5px;        
+    color: #fff;
+}
+.net_detection::-webkit-scrollbar{
+    display: none;
+}
+.ex_box{    
+    background: #fff;        
+    padding: 10px;        
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.ex_box p{
+    font-size: 12px;
+    margin-top: 10px;
+}
+.ex_plore h6{
+    font-size: 14px;
+}
+.ex_plore p{
+    font-size: 12px;
+    margin-top: 5px;
+}
+.ex_plore{    
+    margin-top: 10px;        
+    background: #fff;        
+    padding: 10px;        
+    border-radius: 10px;
 }
