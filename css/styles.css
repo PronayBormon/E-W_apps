@@ -2157,7 +2157,6 @@ padding-bottom: 5px;
 }
 
 .small ul li p {
-    color: #000 !important;
 }
 
 .no_data {
@@ -2223,6 +2222,8 @@ position: sticky;
 top: 0;
 
 background: #fff;
+
+outline: 0 !important;
 }
 .search_ico{
 
@@ -2371,3 +2372,58 @@ font-size: 13px;
 .content_slider a{
     color: #000;
 }
+
+
+/* first page start here  */
+.first_content{
+
+}
+.add_identity{padding: 10px;}
+.add_identity h6{
+
+font-size: 14px;
+
+color: #000;
+}
+.add_identity p{
+
+font-size: 13px;
+}
+.add_identity ion-icon{
+
+color: #adadad;
+}
+.add_identity a{
+
+display: flex;
+
+justify-content: space-between;
+
+align-items: center;
+
+background: #ededed;
+
+background: transparent;
+
+border-bottom: 1px solid #ededed;
+
+padding-bottom: 5px;
+}
+.f_slider img{
+    
+width: 100%;
+}
+.log_sign{
+    padding: 5px;
+    border: 1px solid #ededed;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.war_status{
+    height: 30vh;
+    overflow: auto;
+}
+.war_status::-webkit-scrollbar{
+    display: none;
+}
+/* first page end here  */
