@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- title  -->
+    <title>Wallet</title>
+
+    <!-- bootstrap 5.3    -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- fontawsome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/styles.css"> <!--Styles-->
+
+</head>
+
+<body style="background-color: skyblue;">
+
+    <!-- top menu bar start here  -->
+    <section class="top_bar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="top_bar_home d-flex">
+                        <!-- choose wallet button  -->
+                        <div class="link_home">
+                            <a href="index.html" class="" type="button"><ion-icon
+                                    name="chevron-back-outline"></ion-icon></a>
+                        </div>
+                        <!-- network wallet button  -->
+                        <div class="link_home">
+                            <h6>Receive </h6>
+                        </div>
+                        <!-- scan icon button part start here  -->
+                        <div class=" link_home">
+                            <button type="button" class="btn_cancle">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- top menu bar end here  -->
+
+    <!-- home content part start here  -->
+    <section class="wallet_select">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="qr_code">
+                        <p>Only supports Ethereum assets(ERC20)</p>
+                        <img src="images/qr.png" class="img-fluid" loading="lazy" alt="">
+                        <div class="text-center">
+                            <h6>Wallet Address</h6>
+                            <p>oiyqw3786shdas876qhgq87dsfy8qyefd8yfq</p>
+
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <button type="button" class="btn_cancle" style="color: #000;"><ion-icon
+                                    name="share-outline"></ion-icon>Share</button>
+                            <button type="button" class="btn_cancle" style="color: #000;"><ion-icon
+                                    name="copy-outline"></ion-icon>Copy</button>
+                            <button type="button" class="btn_cancle" style="color: #000;" data-bs-toggle="offcanvas"
+                                data-bs-target="#asset_modal" aria-controls="offcanvasBottom"><ion-icon
+                                    name="ellipsis-vertical-outline"></ion-icon></button>
+                        </div>
+                    </div>
+                    <div class="layer settings_">
+                        <ul style="background-color: #fff;">
+                            <li>
+                                <div class="_layer">
+                                    <a type="button" class="_net_btn active" data-bs-toggle="offcanvas"
+                                        data-bs-target="#from_wallet" aria-controls="offcanvasBottom">
+                                        <div class="d-flex align-items-center">
+                                            <ion-icon name="clipboard-outline"></ion-icon>
+                                            <p>How to receive from another wallet?</p>
+                                        </div>
+                                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="_layer">
+                                    <a type="button" class="_net_btn active" data-bs-toggle="offcanvas"
+                                        data-bs-target="#exchanged" aria-controls="offcanvasBottom">
+                                        <div class="d-flex align-items-center">
+                                            <ion-icon name="clipboard-outline"></ion-icon>
+                                            <p>How to receive from from exchanges?</p>
+                                        </div>
+                                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- how to receive  -->
+    <div class="offcanvas coin_select offcanvas-bottom" tabindex="-1" id="from_wallet"
+        aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header">
+            <button style="opacity: 0;">..</button>
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">How to receive from other wallets?</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body small">
+            <div class="steps_">
+                <h6>Steps (in another wallets app)</h6>
+                <ul>
+                    <li>
+                        Select send (or Transfer in some wallets).
+                    </li>
+                    <li>
+                        Select The Token and want to send.
+                    </li>
+                    <li>
+                        Enter your token wallet address as the recipient or scan the wallet QR code that appears in the
+                        token app.
+                    </li>
+                    <li>
+                        select the network that matches your Token wallet address.
+                    </li>
+                    <li>
+                        Enter anount, confirm send and find the token in your Toen wallet.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- how to exchanged -->
+    <div class="offcanvas coin_select offcanvas-bottom " tabindex="-1" id="exchanged"
+        aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header">
+            <button style="opacity: 0;">..</button>
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">How to receive from from exchanges?</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body small">
+            <div class="steps_">
+                <h6>Steps (in another exchange app)</h6>
+                <ul>
+                    <li>
+                        Select the token you want to withdraw.
+                    </li>
+                    <li>
+                        Enter your Token wallet address as the recipient or scan the wallet QR code that appears in the
+                        Token app..
+                    </li>
+                    <li>
+                        select the network that matches your Token wallet address.
+                    </li>
+                    <li>
+                        Enter anount, confirm send and find the token in your Toen wallet.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- select token modal  -->
+    <div class="offcanvas coin_select offcanvas-bottom " tabindex="-1" id="asset_modal"
+        aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close close__" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Select asset </h5>
+            <a href="#" style="opacity: 0;"><i class="fa-solid fa-gear"></i></a>
+        </div>
+        <div class="offcanvas-body small pt-0">
+
+            <div class="layer transfer_">
+                <div class="in_group">
+                    <input type="text" placeholder="Input token name">
+                    <ion-icon name="search-outline" class="ico_search"></ion-icon>
+                </div>
+                <ul>
+                    <li>
+                        <a class="pass_h">
+                            <div class="asset_content m-0 align-items-center">
+                                <div style="width: 15%;">
+                                    <img src="images/currency_icon/usdt.png" loading="lazy" class="img-fluid" alt="">
+                                </div>
+                                <div style="width: 85%;">
+                                    <div class="ac_top align-items-center" style="border: none;">
+                                        <div>
+                                            <h4 class="mt-2">USDT </h4>
+                                        </div>
+                                        <div>
+                                            <p>0</p>
+                                            <h6>$0</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="pass_h">
+                            <div class="asset_content m-0 align-items-center">
+                                <div style="width: 15%;">
+                                    <img src="images/currency_icon/eth.png" loading="lazy" class="img-fluid" alt="">
+                                </div>
+                                <div style="width: 85%;">
+                                    <div class="ac_top align-items-center" style="border: none;">
+                                        <div>
+                                            <h4 class="mt-2">ETH </h4>
+                                        </div>
+                                        <div>
+                                            <p>0</p>
+                                            <h6>$0</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- enter password modal part start here  -->
+    <div class="pass_modal pass_hint">
+        <div class="p_modal">
+            <form action="">
+                <h6>Enter Amount</h6>
+                <div class="in_group">
+                    <input type="text" placeholder="Enter Amount" class="img-fluid" name="hint" id="password-hint">
+
+                </div>
+                <div class="d-flex align-items-center justify-content-center my_modal_footer">
+                    <button type="button" class="btn_cancle">Cancel</button>
+                    <button type="button" class="btn_cancle">Confirm</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- enter password madal end here s -->
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!--Jquery Cdn-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script> <!--Bootstrap-->
+    <!-- ion icon  -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/footer.securityModal.tabBtn.main.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+
+            // pass hint modal 
+            $(".pass_h").click(function () {
+                $(".pass_hint").fadeIn();
+                $(".close__").click();
+            });
+            $(".pass_modal .btn_cancle").click(function () {
+                $(".pass_hint").fadeOut();
+            });
+
+
+        })
+    </script>
+
+
+
+
+
+</body>
+
+</html>

@@ -2442,13 +2442,14 @@ width: 100%;
     font-size: 14px;
     text-transform: capitalize;
 }
-.tr_money input{
+.tr_money input,.tr_money textarea{
     width: 100%;
     margin: 3px 0px;
     padding: 5px 10px;
     border-radius: 8px;
     border: 1px solid #ccc;
     font-size: 13px;
+    outline: 0 !important;
 }
 .fee_list{
 
@@ -2474,4 +2475,79 @@ width: 100%;
 }
 .fee_list p{    
     font-size: 12px;
+}
+.qr_code{
+
+background: #fff;
+
+margin: 10px 0px;
+
+padding: 10px;
+
+border-radius: 10px;
+
+text-align: center;
+}
+.qr_code p{
+
+font-size: 13px;
+
+margin: 10px;
+}
+.qr_code img{
+
+width: 300px;
+
+padding: 10px;
+}
+.qr_code h6{
+
+margin-top: 10px;
+
+font-size: 13px;
+
+color: gray;
+}
+.qr_code button{
+    
+font-size: 14px;
+    
+background: #8080802e;
+    
+width: 100%;
+    
+padding: 10px;
+    
+border-radius: 5px;
+    
+margin: 3px;
+    
+color: #000!important;
+}
+.qr_code button ion-icon{
+    
+font-size: 18px;
+    
+margin-right: 5px;
+}
+.steps_{
+    
+}
+.steps_ h6{
+
+margin: 5px 0px;
+}
+.steps_ ul li{
+
+list-style: disc;
+
+margin: 10px 0px;
+
+font-size: 13px;
+}
+.steps_ ul{
+    
+padding-left: 20px;
+    
+list-style: none;
 }

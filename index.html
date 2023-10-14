@@ -67,12 +67,12 @@
                 <ion-icon name="swap-vertical-outline"></ion-icon>
                 <p>Transfer</p>
               </a>
-              <a href="transfer.html">
+              <a href="receive.html">
                 <ion-icon name="download-outline"></ion-icon>
                 <p>Receive</p>
               </a>
 
-              <a href="transfer.html">
+              <a data-bs-toggle="offcanvas" data-bs-target="#buy" aria-controls="choose_wallet">
                 <ion-icon name="bag-outline"></ion-icon>
                 <p>Buy</p>
               </a>
@@ -245,6 +245,37 @@
       </div>
     </div>
   </section>
+
+  <!-- buy modal  -->
+      <!-- select token modal  -->
+      <div class="offcanvas coin_select offcanvas-bottom " tabindex="-1" id="buy"
+      aria-labelledby="offcanvasBottomLabel">
+      <div class="offcanvas-header">
+          <button type="button" class="btn-close close__" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+          <h5 class="offcanvas-title" id="offcanvasBottomLabel">Selec On Ranp method </h5>
+          <a href="#" style="opacity: 0;"><i class="fa-solid fa-gear"></i></a>
+      </div>
+      <div class="offcanvas-body small pt-0">
+        <div class="layer settings_">
+          <ul style="background-color: #fff;">
+              <li>
+                  <div class="_layer">
+                      <a type="button" class="_net_btn active" data-bs-toggle="offcanvas"
+                          data-bs-target="#from_wallet" aria-controls="offcanvasBottom">
+                          <div class="d-flex align-items-center">
+                            <ion-icon name="moon-outline"></ion-icon>
+                              <p>MoonPay</p>
+                          </div>
+                          <ion-icon name="chevron-forward-outline"></ion-icon>
+                      </a>
+                  </div>
+              </li>
+          </ul>
+      </div>
+      </div>
+  </div>
+
 
   <!-- Transfer modal  -->
   <div class="offcanvas coin_select offcanvas-bottom " tabindex="-1" id="asset_modal"
