@@ -63,7 +63,7 @@
 
             </div>
             <div class="wallet_options">
-              <a href="transfer.html">
+              <a type="button" data-bs-toggle="offcanvas" data-bs-target="#asset_modal" aria-controls="choose_wallet">
                 <ion-icon name="swap-vertical-outline"></ion-icon>
                 <p>Transfer</p>
               </a>
@@ -71,14 +71,7 @@
                 <ion-icon name="download-outline"></ion-icon>
                 <p>Receive</p>
               </a>
-              <a href="transfer.html">
-                <ion-icon name="speedometer-outline"></ion-icon>
-                <p>Resource</p>
-              </a>
-              <a href="transfer.html">
-                <i class="fa-solid fa-bridge"></i>
-                <p>Bridge</p>
-              </a>
+
               <a href="transfer.html">
                 <ion-icon name="bag-outline"></ion-icon>
                 <p>Buy</p>
@@ -253,6 +246,70 @@
     </div>
   </section>
 
+  <!-- Transfer modal  -->
+  <div class="offcanvas coin_select offcanvas-bottom " tabindex="-1" id="asset_modal"
+    aria-labelledby="offcanvasBottomLabel">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+      <h5 class="offcanvas-title" id="offcanvasBottomLabel">Select asset </h5>
+      <a href="#" style="opacity: 0;"><i class="fa-solid fa-gear"></i></a>
+    </div>
+    <div class="offcanvas-body small pt-0">
+
+      <div class="layer transfer_">
+
+        <!-- layer two  -->
+        <div class="in_group">
+          <input type="text" placeholder="Input token name">
+          <ion-icon name="search-outline" class="ico_search"></ion-icon>
+        </div>
+        <ul>
+          <li>
+            <a href="transfer.html">
+              <div class="asset_content m-0 align-items-center">
+                <div style="width: 15%;">
+                  <img src="images/currency_icon/usdt.png" loading="lazy" class="img-fluid" alt="">
+                </div>
+                <div style="width: 85%;">
+                  <div class="ac_top align-items-center" style="border: none;">
+                    <div>
+                      <h4 class="mt-2">USDT </h4>
+                    </div>
+                    <div>
+                      <p>0</p>
+                      <h6>$0</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="transfer.html">
+              <div class="asset_content m-0 align-items-center">
+                <div style="width: 15%;">
+                  <img src="images/currency_icon/eth.png" loading="lazy" class="img-fluid" alt="">
+                </div>
+                <div style="width: 85%;">
+                  <div class="ac_top align-items-center" style="border: none;">
+                    <div>
+                      <h4 class="mt-2">ETH </h4>
+                    </div>
+                    <div>
+                      <p>0</p>
+                      <h6>$0</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
 
   <!-- Choose Network switch modal/Offcanvas -->
   <div class="offcanvas coin_select offcanvas-bottom " tabindex="-1" id="network_button"
