@@ -89,7 +89,21 @@
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="js/footer.securityModal.tabBtn.main.js"></script>
 
-
+    <!-- copy in share button  -->
+    <script>
+        
+        let copy = document.getElementById("copied");
+          function copyFunc() {
+              var copyText = document.getElementById("url");
+              copyText.select();
+              copyText.setSelectionRange(0, 99999);
+              navigator.clipboard.writeText(copyText.value);
+              copy.innerHTML = "Copied";
+              setTimeout(() => {
+                  copy.innerHTML ="Copy";
+              }, 2000);
+          }
+      </script>
 
 
 
