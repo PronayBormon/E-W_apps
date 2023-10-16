@@ -168,6 +168,36 @@ a {
     display: none;
 }
 
+/* s  */
+.coin_list_st ul::-webkit-scrollbar {
+    display: none;
+}
+.coin_list_st {
+    height: 80vh;
+    border: 1px solid;
+    grid-column: 1/2;
+    /* grid-row: 1 / 3; */
+    border: none;
+    /* width: 50px; */
+}
+
+.coin_list_st ul li button img {
+    /* padding: 15px; */
+    max-width: 70px;
+    width: 30px;
+}
+
+.coin_list_st ul li button {
+    background: transparent;
+    margin: 3px 0px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    /* box-shadow: 3px 2px 5px 3px #d4d4d4c4; */
+}
+
 .w_list_btn {
     position: relative;
 
