@@ -169,6 +169,15 @@ a {
 }
 
 /* s  */
+.coin_list_st ul{
+    height: 80vh;
+    border: 1px solid;
+    grid-column: 1/2;
+    /* grid-row: 1 / 3; */
+    border: none;
+    /* width: 50px; */
+    overflow: auto;
+}
 .coin_list_st ul::-webkit-scrollbar {
     display: none;
 }
