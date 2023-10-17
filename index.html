@@ -14,6 +14,8 @@
   <!-- fontawsome cdn  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/styles.css"> <!--Styles-->
 
 </head>
@@ -54,13 +56,34 @@
       <div class="row">
         <div class="col-md-12">
           <div class="showed_wallet">
-            <div class="_coin_div">
-              <h5>BRICS</h5>
-              <p><span id="p1">098sdfs0890asdf</span> <button type="button" onclick="copyToClipboard('#p1')"
-                  class="btn_copy"><ion-icon name="copy-outline"></ion-icon></button></p>
-              <a href="wallet_manage.html"><ion-icon name="ellipsis-horizontal-outline"></ion-icon></a>
-              <h6><span>$</span>0</h6>
-
+            <!-- slider  -->
+            <div class="owl-carousel">
+              <div class="_coin_div">
+                <h5>BRICS</h5>
+                <p><span id="p1">098sdfs0890asdf</span> <button type="button" onclick="copyToClipboard('#p1')"
+                    class="btn_copy"><ion-icon name="copy-outline"></ion-icon></button></p>
+                <a href="wallet_manage.html"><ion-icon name="ellipsis-horizontal-outline"></ion-icon></a>
+                <h6><span>$</span>0</h6>
+  
+              </div>
+              
+              <div class="_coin_div">
+                <h5>BRICS</h5>
+                <p><span id="p1">098sdfs0890asdf</span> <button type="button" onclick="copyToClipboard('#p1')"
+                    class="btn_copy"><ion-icon name="copy-outline"></ion-icon></button></p>
+                <a href="wallet_manage.html"><ion-icon name="ellipsis-horizontal-outline"></ion-icon></a>
+                <h6><span>$</span>0</h6>
+  
+              </div>
+              
+              <div class="_coin_div">
+                <h5>BRICS</h5>
+                <p><span id="p1">098sdfs0890asdf</span> <button type="button" onclick="copyToClipboard('#p1')"
+                    class="btn_copy"><ion-icon name="copy-outline"></ion-icon></button></p>
+                <a href="wallet_manage.html"><ion-icon name="ellipsis-horizontal-outline"></ion-icon></a>
+                <h6><span>$</span>0</h6>
+  
+              </div>
             </div>
             <div class="wallet_options">
               <a type="button" data-bs-toggle="offcanvas" data-bs-target="#asset_modal" aria-controls="choose_wallet">
@@ -587,6 +610,7 @@
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="js/footer.securityModal.tabBtn.main.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
 
   <!-- click to copy text  -->
   <script>
@@ -598,6 +622,13 @@
         document.execCommand("copy");
         $temp.remove();
       }
+    });
+
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel({
+        items:1,
+        margin:5
+      });
     });
   </script>
 
