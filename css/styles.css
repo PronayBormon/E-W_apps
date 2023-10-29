@@ -833,7 +833,12 @@ footer {
 
 .footer_list a:hover svg,
 .footer_list a.active svg {
-    filter: invert(100%) sepia(100%) saturate(3000%) hue-rotate(125deg) brightness(64%) contrast(234%);
+    /* filter: invert(100%) sepia(100%) saturate(3000%) hue-rotate(125deg) brightness(64%) contrast(234%); */
+    background: #0ba5c4;
+    border-radius: 50%;
+    padding: 3px;
+    stroke: #fff;
+    fill: #fff;
 }
 
 .footer_list a:hover p,
@@ -2630,4 +2635,8 @@ box-shadow: 1px 1px 6px 4px #cbcbcb52;
 }
 .top_bar_home  h6{
     font-size: 14px;
+}
+.footer_list a.active svg line,.footer_list a.active svg circle,.footer_list a.active svg path{
+    stroke: #fff !important;
+    fill: #fff !important;
 }
