@@ -139,7 +139,7 @@ color: #80808091;
 ._coin_div {
     border: 1px solid #000;
     margin: 5px 0px;
-    padding: 8px 15px;
+    padding: 10px 15px;
     border-radius: 8px;
     box-shadow: 2px 3px 5px 3px #dadadaab;
     border: none;
@@ -200,7 +200,7 @@ color: #80808091;
 
 .coin_list_st ul li button {
     background: transparent;
-    margin: 3px 0px;
+    margin: 10px 0px;
     border: none;
     display: flex;
     justify-content: center;
@@ -248,7 +248,7 @@ color: #80808091;
 ._coin_buy {
     background: #2d2d2d17;
     border-radius: 10px;
-    padding: 20px 10px;
+    padding: 10px 10px;
     box-shadow: 1px 2px 2px 0px #dfdcdc70;
     margin-top: 8px;
 }
@@ -313,6 +313,7 @@ color: #80808091;
     background: transparent;
     font-weight: 500;
     transition: .4s all ease-in-out;
+    font-size: 12px;
 }
 
 ._tab.active {
@@ -497,6 +498,7 @@ color: #80808091;
     box-shadow: 0 0 10px #adadad24;
     color: #000;
     text-transform: uppercase;
+    font-size: 12px;
 }
 
 .btn_main i {}
@@ -662,20 +664,20 @@ color: #80808091;
 
 .asset_content h4 {
 
-    font-size: 14px;
+font-size: 13px;
 
-    font-weight: 600;
+font-weight: 600;
 
-    margin-bottom: 5px;
+margin-bottom: 5px;
 }
 
 .asset_content p {
 
-    text-align: center;
+text-align: center;
 
-    font-size: 20px;
+font-size: 18px;
 
-    color: #000;
+color: #000;
 }
 
 .asset_content h6 {
@@ -791,6 +793,7 @@ color: #80808091;
     background: white;
     border-top: 1px solid #ededed;
     width: 100%;
+    z-index: 5;
 }
 
 footer {
@@ -2205,8 +2208,7 @@ color: gray;
     display: none;
 }
 
-.small ul li p {
-}
+.small ul li p {}
 
 .no_data {
     height: 90vh;
@@ -2381,6 +2383,7 @@ margin-bottom: 10px;
 }
 .cont_title h6{
 
+font-size: 14px;
 }
 .cont_title a{
 
@@ -2393,21 +2396,21 @@ color: #808080;
 }
 .c_list img{
 
-width: 60px !important;
+width: 45px !important;
 
-min-width: 50px;
+/* min-width: 50px; */
 
 margin-right: 20px;
 }
 .c_list h6{
 
-font-size: 15px;
+font-size: 12px;
 
 margin-bottom: 5px;
 }
 .c_list p{
     
-font-size: 13px;
+font-size: 12px;
 }
 .c_list{
     display: flex;
@@ -2624,4 +2627,7 @@ padding: 10px 0px;
 background: #fff;
     
 box-shadow: 1px 1px 6px 4px #cbcbcb52;
+}
+.top_bar_home  h6{
+    font-size: 14px;
 }
