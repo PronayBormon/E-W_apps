@@ -60,7 +60,7 @@
             <div class="owl-carousel">
               <div class="_coin_div">
                 <h5>BRICS</h5>
-                <p><span id="p1">098sdfs0890asdf</span> <button type="button" onclick="copyToClipboard('#p1')"
+                <p><input id="c_text" type="text" style="border: none !important; outline: 0 !important;background: transparent !important; color: #fff;" value="098sdfs0890asdf"> <button type="button" onclick="copyfunctin()"
                     class="btn_copy"><ion-icon name="copy-outline"></ion-icon></button></p>
                 <a href="wallet_manage.html"><ion-icon name="ellipsis-horizontal-outline"></ion-icon></a>
                 <h6><span>$</span>0</h6>
@@ -632,6 +632,22 @@
     });
   </script>
 
+<script>
+  function copyfunctin() {
+    // Get the text field
+    var copyText = document.getElementById("c_text");
+  
+    // Select the text field
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); // For mobile devices
+  
+    // Copy the text inside the text field
+    navigator.clipboard.writeText(copyText.value);
+    
+    // Alert the copied text
+    // alert("Copied the text: " + copyText.value);
+  }
+  </script>
 
 
 
