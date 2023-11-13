@@ -21,6 +21,14 @@
 
 <body>
 
+    <div class="loader">
+        <div class="load_box">
+            <img src="images/logo_loader.png" class="img-fluid" loading="lazy" alt="">
+            <h6>BRICS</h6>
+            <h6 style="font-weight: 300;">Loading...</h6>
+        </div>
+    </div>
+
     <!-- top menu bar start here  -->
     <section class="top_bar">
         <div class="container-fluid">
@@ -102,7 +110,7 @@
 
                         <li>
                             <div class="_layer">
-                                <a  type="button" class="_net_btn active pass_h">
+                                <a type="button" class="_net_btn active pass_h">
                                     <div class="d-flex align-items-center">
                                         <p>Password hint</p>
                                     </div>
@@ -154,7 +162,8 @@
             <form action="">
                 <h6>Passwod Hint </h6>
                 <div class="in_group">
-                    <input type="password" placeholder="Password hint" value="Test_pass" class="img-fluid" name="hint" id="password-hint">
+                    <input type="password" placeholder="Password hint" value="Test_pass" class="img-fluid" name="hint"
+                        id="password-hint">
                     <i toggle="#password-hint" class=" fa-regular fa-eye  toggle-password"></i>
                 </div>
                 <div class="d-flex align-items-center justify-content-center my_modal_footer">
@@ -198,7 +207,7 @@
                 $(".pass_hint").fadeOut();
             });
 
-            
+
 
             // show password 
             $(".toggle-password").click(function () {

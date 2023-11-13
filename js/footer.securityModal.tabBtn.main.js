@@ -38,4 +38,6 @@ $(document).ready(function () {
     $(".btn_close").click(function () {
         $(".popup_security").fadeOut();
     });
+    $(".loader").fadeOut();
 })
+

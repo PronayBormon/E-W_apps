@@ -21,6 +21,15 @@
 
 <body>
 
+
+    <div class="loader">
+        <div class="load_box">
+            <img src="images/logo_loader.png" class="img-fluid" loading="lazy" alt="">
+            <h6>BRICS</h6>
+            <h6 style="font-weight: 300;">Loading...</h6>
+        </div>
+    </div>
+
     <!-- top menu bar start here  -->
     <section class="top_bar">
         <div class="container-fluid">
@@ -28,15 +37,17 @@
                 <div class="col-md-12">
                     <div class="top_bar_home ">
                         <!-- choose wallet button  -->
-                        <div class=" link_home " >
-                            <a href="wallet_manage.html" class="" type="button"><ion-icon name="chevron-back-outline"></ion-icon></a>
+                        <div class=" link_home ">
+                            <a href="wallet_manage.html" class="" type="button"><ion-icon
+                                    name="chevron-back-outline"></ion-icon></a>
                         </div>
                         <!-- network wallet button  -->
                         <div class="link_home">
                         </div>
                         <!-- scan icon button part start here  -->
                         <div class=" link_home">
-                            <a href="#PublicSupportFeedback" type="button" ><ion-icon name="help-circle-outline"></ion-icon></a>
+                            <a href="#PublicSupportFeedback" type="button"><ion-icon
+                                    name="help-circle-outline"></ion-icon></a>
                         </div>
                     </div>
                 </div>
@@ -57,16 +68,18 @@
                 </div>
                 <ul class="layer_txt">
                     <li>
-                        You can create a key that manages the BRICS consensus layer authenticator from the key of the current BRICS wallet.
+                        You can create a key that manages the BRICS consensus layer authenticator from the key of the
+                        current BRICS wallet.
                     </li>
                     <li>
-                        This key can be used in Non-Custodial ETH staking services; no other usaged scenarios at this time; 
+                        This key can be used in Non-Custodial ETH staking services; no other usaged scenarios at this
+                        time;
                     </li>
                     <li>
                         Always make a secure backup of the BRICS wallet's key;
                     </li>
                 </ul>
-                
+
             </div>
         </div>
     </section>
@@ -75,17 +88,17 @@
     <!-- identity modal  -->
     <div class="popup_security">
         <div class="main_modal">
-          <div class="d-flex">
-          </div>
-          <!-- <h2>Sequrity reminder</h2> -->
-          <p style="color: #000;">Identity is not backup, make sure that the Mnemonic of the ...</p>
-          
-          <div class="d-flex align-items-center justify-content-end">
-            <button class="btn_cancle btn_close text-black">Cancel</button>
-            
-          </div>
+            <div class="d-flex">
+            </div>
+            <!-- <h2>Sequrity reminder</h2> -->
+            <p style="color: #000;">Identity is not backup, make sure that the Mnemonic of the ...</p>
+
+            <div class="d-flex align-items-center justify-content-end">
+                <button class="btn_cancle btn_close text-black">Cancel</button>
+
+            </div>
         </div>
-      </div>
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.7.1.js"
@@ -100,11 +113,11 @@
     <script src="js/footer.securityModal.tabBtn.main.js"></script>
 
     <script>
-        $(document).ready(function(){
-            $(".btn_create").click(function(){
+        $(document).ready(function () {
+            $(".btn_create").click(function () {
                 $(".popup_security").fadeIn();
             });
-            $(".main_modal button").click(function(){                
+            $(".main_modal button").click(function () {
                 $(".popup_security").fadeOut();
             })
         })

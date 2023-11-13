@@ -22,6 +22,15 @@
 
 <body>
 
+  
+  <div class="loader">
+    <div class="load_box">
+      <img src="images/logo_loader.png" class="img-fluid" loading="lazy" alt="">
+      <h6>BRICS</h6>
+      <h6 style="font-weight: 300;">Loading...</h6>
+    </div>
+  </div>
+
   <!-- top menu bar start here  -->
   <section class="top_bar">
     <div class="container-fluid">
@@ -552,6 +561,7 @@
     </div>
   </div>
 
+
   <!-- Get token button offcanvas  -->
   <div class="offcanvas offcanvas-bottom " tabindex="-1" id="setings_option" aria-labelledby="offcanvasBottomLabel">
     <div class="offcanvas-header">
@@ -621,6 +631,7 @@
   <!-- click to copy text  -->
   <script>
     $(document).ready(function () {
+      $(".loader").fadeOut();
       function copyToClipboard(element) {
         var $temp = $("<input>");
         $("body").append($temp);

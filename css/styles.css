@@ -256,11 +256,12 @@ a {
     opacity: 0;
 }
 
-.w_list_btn.active img
-{
-    -webkit-filter: unset; /* Safari 6.0 - 9.0 */
-  filter: unset;
+.w_list_btn.active img {
+    -webkit-filter: unset;
+    /* Safari 6.0 - 9.0 */
+    filter: unset;
 }
+
 .w_list_btn.active:after {
     height: 60%;
 }
@@ -1659,17 +1660,17 @@ footer {
 .in_group input,
 .in_group textarea {
 
-width: 100%;
+    width: 100%;
 
-border-radius: 5px;
+    border-radius: 5px;
 
-border: 1px solid #ededed;
+    border: 1px solid #ededed;
 
-padding: 5px 15px;
+    padding: 5px 15px;
 
-outline: 0 !important;
+    outline: 0 !important;
 
-margin: 2px 0px;
+    margin: 2px 0px;
 }
 
 .in_group label {
@@ -2040,24 +2041,24 @@ margin: 2px 0px;
 
 .m_box p {
 
-overflow: hidden;
+    overflow: hidden;
 
-display: -webkit-box;
+    display: -webkit-box;
 
--webkit-line-clamp: 1;
+    -webkit-line-clamp: 1;
     /* number of lines to show */
 
-line-clamp: 1;
+    line-clamp: 1;
 
--webkit-box-orient: vertical;
+    -webkit-box-orient: vertical;
 
-font-size: 10px;
+    font-size: 10px;
 
-margin-top: 0px;
+    margin-top: 0px;
 
-color: #3F51B5;
+    color: #3F51B5;
 
-text-align: start;
+    text-align: start;
 }
 
 .ttl_m {
@@ -2492,9 +2493,9 @@ text-align: start;
 
 .add_identity h6 {
 
-font-size: 14px;
+    font-size: 14px;
 
-color: #0d84fc;
+    color: #0d84fc;
 }
 
 .add_identity p {
@@ -2808,17 +2809,63 @@ color: #0d84fc;
 }
 
 .channel_box a {}
-.p_link{
+
+.p_link {
     font-size: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px 0px;
 }
-.p_link i{
+
+.p_link i {
     font-size: 10px;
     margin-right: 3px;
 }
 
 
 /* about page end here  */
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn);
+    }
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    background: #fffffff5;
+}
+
+.loader img {
+    animation: spin 2.5s linear infinite;
+    width: 30%;
+    max-width: 100px;
+}
+
+.load_box {
+    /* width: 100%; */
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    /* height: 100%; */
+    min-width: 250px;
+    text-align: center;
+}
+
+.load_box h6 {
+    font-size: 14px;
+    margin: 10px;
+}

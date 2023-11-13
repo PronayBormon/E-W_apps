@@ -21,6 +21,14 @@
 
 <body>
 
+    <div class="loader">
+        <div class="load_box">
+            <img src="images/logo_loader.png" class="img-fluid" loading="lazy" alt="">
+            <h6>BRICS</h6>
+            <h6 style="font-weight: 300;">Loading...</h6>
+        </div>
+    </div>
+
     <!-- top menu bar start here  -->
     <section class="top_bar">
         <div class="container-fluid">
@@ -107,7 +115,7 @@
         </div>
     </div>
     <!-- enter password madal end here s -->
-    
+
 
 
     <script src="https://code.jquery.com/jquery-3.7.1.js"
@@ -124,13 +132,13 @@
     <script>
         $(document).ready(function () {
             $('#check2').click(function () {
-                if ($(this).not(':checked')){
+                if ($(this).not(':checked')) {
                     $(".pass_id").fadeIn();
-                }else{
+                } else {
                     $(".pass_id").fadeIn();
                 }
-                
-                    
+
+
             });
 
             // pas modal 
