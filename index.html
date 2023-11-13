@@ -60,29 +60,31 @@
             <div class="owl-carousel">
               <div class="_coin_div">
                 <h5>BRICS</h5>
-                <p><input id="c_text" type="text" style="border: none !important; outline: 0 !important;background: transparent !important; color: #fff;" value="098sdfs0890asdf"> <button type="button" onclick="copyfunctin()"
-                    class="btn_copy"><ion-icon name="copy-outline"></ion-icon></button></p>
+                <p><input id="c_text" type="text"
+                    style="border: none !important; outline: 0 !important;background: transparent !important; color: #fff;"
+                    value="098sdfs0890asdf"> <button type="button" onclick="copyfunctin()" class="btn_copy"><ion-icon
+                      name="copy-outline"></ion-icon></button></p>
                 <a href="wallet_manage.html"><ion-icon name="ellipsis-horizontal-outline"></ion-icon></a>
                 <h6><span>$</span>0</h6>
-  
+
               </div>
-              
+
               <div class="_coin_div">
                 <h5>BRICS</h5>
                 <p><span id="p1">098sdfs0890asdf</span> <button type="button" onclick="copyToClipboard('#p1')"
                     class="btn_copy"><ion-icon name="copy-outline"></ion-icon></button></p>
                 <a href="wallet_manage.html"><ion-icon name="ellipsis-horizontal-outline"></ion-icon></a>
                 <h6><span>$</span>0</h6>
-  
+
               </div>
-              
+
               <div class="_coin_div">
                 <h5>BRICS</h5>
                 <p><span id="p1">098sdfs0890asdf</span> <button type="button" onclick="copyToClipboard('#p1')"
                     class="btn_copy"><ion-icon name="copy-outline"></ion-icon></button></p>
                 <a href="wallet_manage.html"><ion-icon name="ellipsis-horizontal-outline"></ion-icon></a>
                 <h6><span>$</span>0</h6>
-  
+
               </div>
             </div>
             <div class="wallet_options">
@@ -115,8 +117,8 @@
                 </div>
               </div>
               <div class="token_content mt-3">
-                <a  class="text-center btn_security"  data-bs-toggle="offcanvas"
-                data-bs-target="#setings_option" aria-controls="offcanvasBottom">
+                <a class="text-center btn_security" data-bs-toggle="offcanvas" data-bs-target="#setings_option"
+                  aria-controls="offcanvasBottom">
                   <h6>Get started with tokens</h6>
                   <p>want to make the most of your wallet? <br>
                     <span style=" text-align: center;" class="btn_get_token">Get token</span>
@@ -494,24 +496,28 @@
           <h6>Wallet under identity</h6>
           <ul>
             <li>
-              <div class="_coin_div">
-                <h5>BRICS</h5>
-                <p>098sdfs0890asdf</p>
-              </div>
+              <a href="#">
+                <div class="_coin_div">
+                  <h5>BRICS</h5>
+                  <p>098sdfs0890asdf</p>
+                </div>
+              </a>
             </li>
-
             <li>
-              <div class="_coin_div">
-                <h5>BTC</h5>
-                <p>098sdfs0890asdf</p>
-              </div>
+              <a href="#">
+                <div class="_coin_div">
+                  <h5>BTC</h5>
+                  <p>098sdfs0890asdf</p>
+                </div>
+              </a>
             </li>
-
             <li>
-              <div class="_coin_div">
-                <h5>ETH</h5>
-                <p>098sdfs0890asdf</p>
-              </div>
+              <a href="#">
+                <div class="_coin_div">
+                  <h5>ETH</h5>
+                  <p>098sdfs0890asdf</p>
+                </div>
+              </a>
             </li>
             <li>
               <h6 class="ms-1">Hardware wallet</h6>
@@ -541,7 +547,7 @@
       <p>Backup the Mnemonic pharse to access the wallet address.</p>
       <p>The Mnemonic Phrase of your identity has not been backed up, please make sure to back it up now.</p>
       <p>The mnemonic Phrase can restore the digital assets under your digital identity,</p>
-      <a href="#" class="btn_backup">Backup now</a>
+      <a href="personal_details.html" class="btn_backup bacK_up">Backup now</a>
       <button class="btn_cancle btn_close">Cancel</button>
     </div>
   </div>
@@ -554,7 +560,7 @@
       <p class="offcanvas-title" id="offcanvasBottomLabel" style="font-size: 12px;">Settings</p>
       <p style="opacity: 0;">.</p>
     </div>
-    <div class="offcanvas-body small">      
+    <div class="offcanvas-body small">
       <div class="minor_fee" style="border: none;">
         <a href="#">
           <div>
@@ -569,10 +575,10 @@
           </div>
         </a>
       </div>
-            
+
       <div class="minor_fee" style="border: none;">
         <a href="receive.html">
-          <div>            
+          <div>
             <ion-icon name="swap-vertical-outline"></ion-icon>
           </div>
           <div class="me-auto">
@@ -586,11 +592,11 @@
       </div>
       <div class="minor_fee" style="border: none;">
         <a href="receive.html">
-          <div>            
+          <div>
             <ion-icon name="swap-vertical-outline"></ion-icon>
           </div>
           <div class="me-auto">
-            <h6>Receive  from another wallet </h6>
+            <h6>Receive from another wallet </h6>
 
           </div>
           <div class="angel_">
@@ -624,30 +630,31 @@
       }
     });
 
-    $(document).ready(function(){
+    $(document).ready(function () {
       $(".owl-carousel").owlCarousel({
-        items:1,
-        margin:5
+        items: 1,
+        margin: 5
       });
     });
   </script>
 
-<script>
-  function copyfunctin() {
-    // Get the text field
-    var copyText = document.getElementById("c_text");
-  
-    // Select the text field
-    copyText.select();
-    copyText.setSelectionRange(0, 99999); // For mobile devices
-  
-    // Copy the text inside the text field
-    navigator.clipboard.writeText(copyText.value);
-    
-    // Alert the copied text
-    // alert("Copied the text: " + copyText.value);
-  }
+  <script>
+    function copyfunctin() {
+      // Get the text field
+      var copyText = document.getElementById("c_text");
+
+      // Select the text field
+      copyText.select();
+      copyText.setSelectionRange(0, 99999); // For mobile devices
+
+      // Copy the text inside the text field
+      navigator.clipboard.writeText(copyText.value);
+
+      // Alert the copied text
+      // alert("Copied the text: " + copyText.value);
+    }
   </script>
+
 
 
 

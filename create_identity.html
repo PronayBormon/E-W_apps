@@ -89,7 +89,7 @@
                         <div class="d-flex align-items-center my-2">
                             <input type="checkbox" name="" id="check"><label for="check" class="ms-2 mb-0" style="font-size: 12px; margin-bottom: 5px;">I have agreed to the terms of service</label>
                         </div>
-                        <button class="btn_backup" type="button">Confirm</button>
+                        <button class="btn_backup add_c_pa" type="button">Confirm</button>
                     </div>
                 </div>
             </div>
@@ -153,6 +153,12 @@
                     input.attr("type", "password");
                 }
             });
+
+
+
+            $(".add_c_pa").click(function(){
+                window.location.href='add_coin_start.html';
+            })
         })
     </script>
 

@@ -198,6 +198,9 @@ a {
     /* padding: 15px; */
     max-width: 70px;
     width: 30px;
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
 }
 
 .coin_list_st ul li button {
@@ -227,7 +230,7 @@ a {
 .w_list_btn::after {
     content: "";
     position: absolute;
-    right: -8px;
+    right: 0px;
     top: 50%;
     transform: translateY(-50%);
     height: 0%;
@@ -237,6 +240,27 @@ a {
     transition: .4s all ease-in-out;
 }
 
+.w_list_btn::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: #a4a4a466;
+    height: 30px;
+    width: 30px;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+}
+
+.w_list_btn.active::before {
+    opacity: 0;
+}
+
+.w_list_btn.active img
+{
+    -webkit-filter: unset; /* Safari 6.0 - 9.0 */
+  filter: unset;
+}
 .w_list_btn.active:after {
     height: 60%;
 }
@@ -1635,15 +1659,17 @@ footer {
 .in_group input,
 .in_group textarea {
 
-    width: 100%;
+width: 100%;
 
-    border-radius: 5px;
+border-radius: 5px;
 
-    border: 1px solid #ededed;
+border: 1px solid #ededed;
 
-    padding: 5px 15px;
+padding: 5px 15px;
 
-    outline: 0 !important;
+outline: 0 !important;
+
+margin: 2px 0px;
 }
 
 .in_group label {
@@ -1762,6 +1788,7 @@ footer {
 .layer_ input {
     padding: 10px 15px;
     font-size: 12px;
+    margin: 2px 0px;
 }
 
 .settings_ .checkbox.style-e .checkbox__checkmark {
@@ -2013,22 +2040,24 @@ footer {
 
 .m_box p {
 
-    overflow: hidden;
+overflow: hidden;
 
-    display: -webkit-box;
+display: -webkit-box;
 
-    -webkit-line-clamp: 1;
+-webkit-line-clamp: 1;
     /* number of lines to show */
 
-    line-clamp: 1;
+line-clamp: 1;
 
-    -webkit-box-orient: vertical;
+-webkit-box-orient: vertical;
 
-    font-size: 12px;
+font-size: 10px;
 
-    margin-top: 0px;
+margin-top: 0px;
 
-    color: #3F51B5;
+color: #3F51B5;
+
+text-align: start;
 }
 
 .ttl_m {
@@ -2463,9 +2492,9 @@ footer {
 
 .add_identity h6 {
 
-    font-size: 14px;
+font-size: 14px;
 
-    color: #000;
+color: #0d84fc;
 }
 
 .add_identity p {
@@ -2779,8 +2808,17 @@ footer {
 }
 
 .channel_box a {}
-
-
+.p_link{
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+.p_link i{
+    font-size: 10px;
+    margin-right: 3px;
+}
 
 
 /* about page end here  */
