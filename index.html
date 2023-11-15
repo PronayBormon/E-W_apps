@@ -20,9 +20,9 @@
 
 </head>
 
-<body>
+<body class="">
 
-  
+  <div class="intro_body"></div>
   <div class="loader">
     <div class="load_box">
       <img src="images/logo_loader.png" class="img-fluid" loading="lazy" alt="">
@@ -60,14 +60,14 @@
   <!-- top menu bar end here  -->
 
   <!-- home content part start here  -->
-  <section class="wallet_select">
+  <section class="wallet_select main_part ">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
           <div class="showed_wallet">
             <!-- slider  -->
             <div class="owl-carousel">
-              <div class="_coin_div">
+              <div class="_coin_div intro_open">
                 <h5>BRICS</h5>
                 <p><input id="c_text" type="text"
                     style="border: none !important; outline: 0 !important;background: transparent !important; color: #fff;"
@@ -96,6 +96,7 @@
 
               </div>
             </div>
+            <!-- shortcut section  -->
             <div class="wallet_options">
               <a type="button" data-bs-toggle="offcanvas" data-bs-target="#asset_modal" aria-controls="choose_wallet">
                 <ion-icon name="swap-vertical-outline"></ion-icon>
@@ -135,7 +136,7 @@
                 </a>
               </div>
             </section>
-            
+
             <!-- token nft and defi part start here  -->
 
             <!-- assets section part start here  -->
@@ -377,6 +378,33 @@
     </div>
   </div>
 
+  <!-- ===================== step guide ===========================  -->
+  <!-- first intro  -->
+  <div class="guide_one">
+    <div class="guid_text">
+      <span></span>
+      <p>Create and manage and switch between multichain wallets.</p>
+      <button class="btn_ok m-0 ms-auto mt-2">Next</button>
+    </div>
+  </div>
+  <!-- guide two  -->
+  <div class="guide_two">
+    <div class="guid_text">
+      <span></span>
+      <p>Switch between networks -ETH mainnet, layer 2 and EVM are supported.</p>
+      <button class="btn_ok m-0 ms-auto mt-2">Next</button>
+    </div>
+  </div>
+  <!-- guide three  -->
+  <div class="guide_three">
+    <div class="guid_text">
+      <span></span>
+      <p>Shortcuts to key wallet features make receive and transfer easy.</p>
+      <button class="btn_ok m-0 ms-auto mt-2">Next</button>
+    </div>
+  </div>
+  <!-- ==================== step guide end =============== -->
+
   <!-- Choose Network switch modal/Offcanvas -->
   <div class="offcanvas coin_select offcanvas-bottom " tabindex="-1" id="network_button"
     aria-labelledby="offcanvasBottomLabel">
@@ -562,7 +590,6 @@
     </div>
   </div>
 
-
   <!-- Get token button offcanvas  -->
   <div class="offcanvas offcanvas-bottom " tabindex="-1" id="setings_option" aria-labelledby="offcanvasBottomLabel">
     <div class="offcanvas-header">
@@ -649,7 +676,6 @@
       });
     });
   </script>
-
   <script>
     function copyfunctin() {
       // Get the text field
@@ -667,6 +693,26 @@
     }
   </script>
 
+
+  <!-- guide option  -->
+  <script>
+    $(document).ready(function () {
+      $(".guide_one").fadeIn();
+      
+      $(".guide_one button").click(function () {
+        $(".guide_one").fadeOut();
+        $(".guide_two").fadeIn();
+      });
+      $(".guide_two button").click(function () {
+        $(".guide_two").fadeOut();
+        $(".guide_three").fadeIn();
+      });
+      $(".guide_three button").click(function () {
+        $(".guide_three").fadeOut();
+      });
+
+    })
+  </script>
 
 
 

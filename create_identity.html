@@ -37,7 +37,7 @@
                     <div class="top_bar_home ">
                         <!-- choose wallet button  -->
                         <div class=" link_home ">
-                            <a href="into_page.html" type="button">
+                            <a href="privacy_alert.html" type="button">
                                 <ion-icon name="chevron-back-outline"></ion-icon></a>
 
                         </div>
@@ -57,35 +57,66 @@
     <!-- top menu bar end here  -->
 
     <!-- main part start here  -->
-    <section class="main_part">
-        <div class="container-fluid">
-            <div class="col-md-12">
-                <div class="title_iden">
-                    <h6>Create identity</h6>
-                    <p>Give your identity a name and password</p>
+    <section class="main_part sm_height ">
+        <div class="st_part">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="create_step">
+                            <div class="step_box active">
+                                <h1>1</h1>
+                                <p>Create identity</p>
+                                <!-- <span></span> -->
+                            </div>
+                            <div class="step_box">
+                                <h1>2</h1>
+                                <p>Secure wallet</p>                        
+                                <span></span>
+                            </div>
+                            <div class="step_box ">
+                                <h1>3</h1>
+                                <p>Confirm secret recovery phrase</p>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="form_part">
-                    <form action="">
-                        <div class="in_group">
-                            <label> Name Your identity</label>
-                            <input type="text" placeholder="Enter 1-12 characters">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="title_iden">
+                            <h6>Create identity</h6>
+                            <p>Give your identity a name and password</p>
                         </div>
-                        <div class="in_group pb-0">
-                            <label> Set Passwrod</label>
-                            <input type="password" placeholder="Enter Password">
+                        <div class="form_part">
+                            <form action="">
+                                <div class="in_group">
+                                    <label> Name Your identity</label>
+                                    <input type="text" placeholder="Enter 5-12 characters">
+                                </div>
+                                <div class="in_group pb-0">
+                                    <label> Set Passwrod</label>
+                                    <input type="password" placeholder="Enter Password">
+                                </div>
+                                <div class="in_group pt-0">
+                                    <input type="password" id="pass" placeholder="Confirm Password">
+                                    <i toggle="#pass" class="fa-regular fa-eye toggle-password"></i>
+                                </div>
+                                <h6 class="mt-2" style="font-size: 12px;">Password hint </h6>
+                                <div class="in_group pt-1">
+                                    <input type="text" id="hint" placeholder="Password hint">
+                                </div>                        
+                                <div class="in_group">
+                                    <label>Invite Id (optional)</label>
+                                    <input type="text" placeholder="">
+                                    <p>If you have invite please put the id here for get the reward of 10 BRICS.</p>
+                                </div>
+                            </form>
                         </div>
-                        <div class="in_group pt-0">
-                            <input type="password" id="pass" placeholder="Confirm Password">
-                            <i toggle="#pass" class="fa-regular fa-eye toggle-password"></i>
-                        </div>
-                        <h6 class="mt-2" style="font-size: 12px;">Password hint </h6>
-                        <div class="in_group pt-1">
-                            <input type="text" id="hint" placeholder="Password hint">
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
+        
     </section>
     <!-- main part end here  -->
 
@@ -165,7 +196,7 @@
 
 
             $(".add_c_pa").click(function(){
-                window.location.href='add_coin_start.html';
+                window.location.href='phrase.html';
             })
         })
     </script>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random 12-Word Sequence</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <style>
+        h1 {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<button id="generateSequence">Generate Random Sequence</button>
+
+<script>
+    // Function to generate a random 12-word sequence
+    function generateRandomSequence() {
+        // Replace this array with your own list of words
+        var wordList = ["apple", "banana", "orange", "grape", "kiwi", "pineapple", "mango", "strawberry", "blueberry", "raspberry", "peach", "pear"];
+
+        // Shuffle the array to get a random order
+        wordList = wordList.sort(() => Math.random() - 0.5);
+
+        // Get the first 12 words from the shuffled array
+        var randomSequence = wordList.slice(0, 12);
+
+        // Display the random sequence in H1 tags
+        $(".tag").each(function (index) {
+            $(this).text(randomSequence[index]);
+        });
+    }
+
+    // Attach the click event to the button
+    $("#generateSequence").on("click", function () {
+        generateRandomSequence();
+    });
+</script>
+
+<!-- Create 12 empty H1 tags for displaying the words -->
+<h1 class="tag"></h1>
+<h1 class="tag"></h1>
+<h1 class="tag"></h1>
+<h1 class="tag"></h1>
+<h1 class="tag"></h1>
+<h1 class="tag"></h1>
+<h1 class="tag"></h1>
+<h1 class="tag"></h1>
+<h1 class="tag"></h1>
+<h1 class="tag"></h1>
+<h1 class="tag"></h1>
+<h1 class="tag"></h1>
+
+</body>
+</html>
