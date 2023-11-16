@@ -20,14 +20,14 @@
 </head>
 
 <body>
-
-    <div class="loader">
-        <div class="load_box">
-            <img src="images/logo_loader.png" class="img-fluid" loading="lazy" alt="">
-            <h6>BRICS</h6>
-            <h6 style="font-weight: 300;">Loading...</h6>
-        </div>
+      
+  <div class="loader">
+    <div class="load_box">
+      <img src="images/logo_loader.png" class="img-fluid" loading="lazy" alt="">
+      <h6>BRICS</h6>
+      <h6 style="font-weight: 300;">Loading...</h6>
     </div>
+  </div>
 
     <!-- top menu bar start here  -->
     <section class="top_bar">
@@ -37,7 +37,7 @@
                     <div class="top_bar_home ">
                         <!-- choose wallet button  -->
                         <div class=" link_home ">
-                            <a href="phrase.html" type="button">
+                            <a href="personal_details.html" type="button">
                                 <ion-icon name="chevron-back-outline"></ion-icon></a>
 
                         </div>
@@ -47,7 +47,7 @@
                         </div>
                         <!-- scan icon button part start here  -->
                         <div class=" link_home">
-                            <!-- <a href="#"><ion-icon name="help-circle-outline"></ion-icon></a> -->
+                            <a href="#"><ion-icon name="help-circle-outline"></ion-icon></a>
                         </div>
                     </div>
                 </div>
@@ -70,10 +70,10 @@
                             </div>
                             <div class="step_box active">
                                 <h1>2</h1>
-                                <p>Secure wallet</p>
+                                <p>Secure wallet</p>                        
                                 <span></span>
                             </div>
-                            <div class="step_box active">
+                            <div class="step_box ">
                                 <h1>3</h1>
                                 <p>Confirm secret recovery phrase</p>
                                 <span></span>
@@ -84,90 +84,81 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="backUup_phrase">
-                            <h1>Confirm Secret Recovery Phrase </h1>
-
+                            <h1>Secret Recovery Phrase </h1>
+                            <p>Write down the secreat recovery phrase on coorect order on a piece of paper.</p>
                             <form action="">
-                                <div class="phrase_box confirn_box">
+                                <div class="phrase_box">
                                     <div class="code_box">
-                                        <input type="text" value="pharse" disabled readonly>
+                                        <h4 class="tag"></h4>
                                         <p>1</p>
                                     </div>
                                     <div class="code_box">
-                                        <input type="text" value="pharse" disabled readonly>
+                                        <h4 class="tag"></h4>
                                         <p>2</p>
                                     </div>
                                     <div class="code_box">
-                                        <input type="text" value="pharse" disabled readonly>
+                                        <h4 class="tag"></h4>
                                         <p>3</p>
                                     </div>
                                     <div class="code_box">
-                                        <input type="text" value="pharse" disabled readonly>
+                                        <h4 class="tag"></h4>
                                         <p>4</p>
                                     </div>
                                     <div class="code_box">
-                                        <input type="text" value="pharse" disabled readonly>
+                                        <h4 class="tag"></h4>
                                         <p>5</p>
                                     </div>
                                     <div class="code_box">
-                                        <input type="text" value="" style="outline: none; border: 1px solid #5b99fe;">
+                                        <h4 class="tag"></h4>
                                         <p>6</p>
                                     </div>
                                     <div class="code_box">
-                                        <input type="text" value="" style="outline: none; border: 1px solid #5b99fe;">
+                                        <h4 class="tag"></h4>
                                         <p>7</p>
                                     </div>
                                     <div class="code_box">
-                                        <input type="text" value="pharse" disabled readonly>
+                                        <h4 class="tag"></h4>
                                         <p>8</p>
                                     </div>
                                     <div class="code_box">
-                                        <input type="text" value="pharse" disabled readonly>
+                                        <h4 class="tag"></h4>
                                         <p>9</p>
                                     </div>
                                     <div class="code_box">
-                                        <input type="text" value="pharse" disabled readonly>
+                                        <h4 class="tag"></h4>
                                         <p>10</p>
                                     </div>
                                     <div class="code_box">
-                                        <input type="text" value="" style="outline: none; border: 1px solid #5b99fe;">
+                                        <h4 class="tag"></h4>
                                         <p>11</p>
                                     </div>
                                     <div class="code_box">
-                                        <input type="text" value="pharse" disabled readonly>
+                                        <h4 class="tag"></h4>
                                         <p>12</p>
                                     </div>
-                                </div>
-                                <buttton class="btn_ok push_backup  " type="button">Next</buttton>
-                                <!-- if phrase correct remove "disabled" class, other wide add "disable class" -->
+                                </div>                              
+                                <buttton class="btn_ok add_c_pa" type="button" >Next</buttton>   
                             </form>
+                            <!-- button -->
+                            <button  id="generateSequence" type="button" class="btn_ok d-none">Genarate</button>
+                            <ul>
+                                <li>
+                                    Keep the secrect security phrase in a safe place that always stay offline.
+                                </li>
+                                <li>
+                                    Never share the security phrase online using emails, photos or social media.
+                                </li>
+                            </ul>
                         </div>
-
+                        
                     </div>
                 </div>
             </div>
         </div>
-
+        
     </section>
     <!-- main part end here  -->
 
-    <!-- enter password modal part start here  -->
-    <div class="success_modal pass_id" >
-        <div class="" style="position: relative;">
-            <div class="modal__icon">
-                <span class="fa-solid fa-check"></span>
-            </div>
-            <h3 class="modal__title">
-                Congratulations
-            </h3>
-            <p class="modal__text">
-                Your settings have been successfully applied.
-            </p>
-            <button class="button btn_nxt">
-                <span class="button__label">Done</span>
-            </button>
-        </div>    
-    </div>
-    <!-- enter password madal end here s -->
 
 
 
@@ -184,17 +175,36 @@
     <script src="js/footer.securityModal.tabBtn.main.js"></script>
 
     <script>
-        $(document).ready(function () {
-            // pas modal 
-            $(".push_backup").click(function () {
-                $(".pass_id").fadeIn();
+        $(document).ready(function(){
+            $("#generateSequence").click();
+            $(".add_c_pa").click(function(){
+                window.location.href= "confirm_phrase.html";
             });
-            $(".btn_nxt").click(function () {
-                $(".pass_id").fadeOut();
-                window.location.href = "add_coin_start.html";
+        })
+        // Function to generate a random 12-word sequence
+        function generateRandomSequence() {
+            // Replace this array with your own list of words
+            var wordList = ["apple", "banana", "orange", "grape", "kiwi", "pineapple", "mango", "strawberry", "blueberry", "raspberry", "peach", "pear"];
+    
+            // Shuffle the array to get a random order
+            wordList = wordList.sort(() => Math.random() - 0.5);
+    
+            // Get the first 12 words from the shuffled array
+            var randomSequence = wordList.slice(0, 12);
+    
+            // Display the random sequence in H1 tags
+            $(".tag").each(function (index) {
+                $(this).text(randomSequence[index]);
             });
+        }
+    
+        // Attach the click event to the button
+        $("#generateSequence").on("click", function () {
+            generateRandomSequence();
         });
     </script>
+
+
 
 
 

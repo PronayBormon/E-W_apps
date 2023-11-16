@@ -429,11 +429,11 @@ a {
     transition: .4s all ease-in-out;
 }
 
-._net_btn.active i {
+._net_btn.active i,.add_c.active i {
     opacity: 1;
 }
 
-._net_btn {
+._net_btn,.add_c {
     width: 100%;
     border: none;
     background: transparent;
