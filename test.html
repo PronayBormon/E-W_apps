@@ -1,75 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/jchamill/jquery-quiz/master/src/jquery.quiz.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
+
 <body>
-    <div id="quiz">
-        <div id="quiz-header">
-          <h1>jQuery Quiz Plugin</h1>
-          <p class="faded">A quiz about the plugin built by the plugin.</p>
-        </div>
-        <div id="quiz-start-screen">
-          <p><a href="#" id="quiz-start-btn" class="quiz-button">Start</a></p>
-        </div>
-      </div>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-      <script src="https://jchamill.github.io/jquery-quiz/jquery.quiz-min.js"></script>
-      <script>
-        $('#quiz').quiz({
-  //resultsScreen: '#results-screen',
-  //counter: false,
-  //homeButton: '#custom-home',
-  counterFormat: 'Question %current of %total',
-  questions: [
-    {
-      'q': 'Is jQuery required for this plugin?',
-      'options': [
-        'Yes',
-        'No'
-      ],
-      'correctIndex': 0,
-      'correctResponse': 'Good job, that was obvious.',
-      'incorrectResponse': 'Well, if you don\'t include it, your quiz won\'t work'
-    },
-    {
-      'q': 'How do you use it?',
-      'options': [
-        'Include jQuery, that\'s it!',
-        'Include jQuery and the plugin javascript.',
-        'Include jQuery, the plugin javascript, the optional plugin css, required markup, and the javascript configuration.'
-      ],
-      'correctIndex': 2,
-      'correctResponse': 'Correct! Sounds more complicated than it really is.',
-      'incorrectResponse': 'Come on, it\'s not that easy!'
-    },
-    {
-      'q': 'The plugin can be configured to require a perfect score.',
-      'options': [
-        'True',
-        'False'
-      ],
-      'correctIndex': 0,
-      'correctResponse': 'You\'re a genius! You just set allowIncorrect to true.',
-      'incorrectResponse': 'Why you have no faith!? Just set allowIncorrect to true.'
-    },
-    {
-      'q': 'How do you specify the questions and answers?',
-      'options': [
-        'MySQL database',
-        'In the HTML',
-        'In the javascript configuration'
-      ],
-      'correctIndex': 2,
-      'correctResponse': 'Correct! Refer to the documentation for the structure.',
-      'incorrectResponse': 'Wrong! Do it in the javascript configuration. You might need to read the documentation.'
-    }
-  ]
-});
-      </script>
+  <div id="securityPhrasesContainer">
+    <p>Security Phrase 1</p>
+    <p>Security Phrase 2</p>
+    <p>Security Phrase 3</p>
+    <p>Security Phrase 4</p>
+    <p>Security Phrase 5</p>
+    <p>Security Phrase 6</p>
+    <p>Security Phrase 7</p>
+    <p>Security Phrase 8</p>
+    <p>Security Phrase 9</p>
+    <p>Security Phrase 10</p>
+    <p>Security Phrase 11</p>
+    <!-- ... and so on for 12 phrases -->
+    <p>Security Phrase 12</p>
+  </div>
+  <button id="copyAllButton">Copy All Phrases</button>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      $('#copyAllButton').on('click', function () {
+        var allPhrases = ''; // Initialize an empty string to store all phrases
+
+        $('#securityPhrasesContainer').find('p').each(function () {
+          allPhrases += $(this).text() + '\n'; // Concatenate each phrase with a line break
+        });
+
+        // Create a temporary textarea to copy all phrases
+        var tempInput = $('<textarea>');
+        $('body').append(tempInput);
+        tempInput.val(allPhrases.trim()).select();
+
+        // Copy all phrases to the clipboard
+        document.execCommand('copy');
+
+        // Remove the temporary textarea
+        tempInput.remove();
+
+        alert('All security phrases copied!');
+      });
+    });
+
+  </script>
+
 </body>
+
 </html>

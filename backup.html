@@ -63,11 +63,32 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
+                        <div class="create_step">
+                            <div class="step_box active">
+                                <h1>1</h1>
+                                <p>Create identity</p>
+                                <!-- <span></span> -->
+                            </div>
+                            <div class="step_box active">
+                                <h1>2</h1>
+                                <p>Secure wallet</p>                        
+                                <span></span>
+                            </div>
+                            <div class="step_box ">
+                                <h1>3</h1>
+                                <p>Confirm secret recovery phrase</p>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
                         <div class="backUup_phrase">
                             <h1>Secret Recovery Phrase </h1>
                             <p>Write down the secreat recovery phrase on coorect order on a piece of paper.</p>
                             <form action="">
-                                <div class="phrase_box">
+                                <div class="phrase_box" id="securityPhrasesContainer">
                                     <div class="code_box">
                                         <h4 class="tag"></h4>
                                         <p>1</p>
@@ -77,50 +98,56 @@
                                         <p>2</p>
                                     </div>
                                     <div class="code_box">
-                                        <h4 class="tag"></h4>
+                                        <h4 class="tag"> </h4>
                                         <p>3</p>
                                     </div>
                                     <div class="code_box">
-                                        <h4 class="tag"></h4>
+                                        <h4 class="tag"> </h4>
                                         <p>4</p>
                                     </div>
                                     <div class="code_box">
-                                        <h4 class="tag"></h4>
+                                        <h4 class="tag"> </h4>
                                         <p>5</p>
                                     </div>
                                     <div class="code_box">
-                                        <h4 class="tag"></h4>
+                                        <h4 class="tag"> </h4>
                                         <p>6</p>
                                     </div>
                                     <div class="code_box">
-                                        <h4 class="tag"></h4>
+                                        <h4 class="tag"> </h4>
                                         <p>7</p>
                                     </div>
                                     <div class="code_box">
-                                        <h4 class="tag"></h4>
+                                        <h4 class="tag"> </h4>
                                         <p>8</p>
                                     </div>
                                     <div class="code_box">
-                                        <h4 class="tag"></h4>
+                                        <h4 class="tag"> </h4>
                                         <p>9</p>
                                     </div>
                                     <div class="code_box">
-                                        <h4 class="tag"></h4>
+                                        <h4 class="tag"> </h4>
                                         <p>10</p>
                                     </div>
                                     <div class="code_box">
-                                        <h4 class="tag"></h4>
+                                        <h4 class="tag"> </h4>
                                         <p>11</p>
                                     </div>
                                     <div class="code_box">
-                                        <h4 class="tag"></h4>
+                                        <h4 class="tag"> </h4>
                                         <p>12</p>
                                     </div>
-                                </div>
-                                <buttton class="btn_ok add_c_pa" type="button">Next</buttton>
+                                </div>   
+                                <p class="text-center success_msg">
+                                    Successfully Copied.
+                                </p>                           
+                                <div class="d-flex justify-content-center align-items-cente">
+                                    <buttton class="btn_ok add_c_pa mt-2" type="button" >Next</buttton>
+                                <buttton class="btn_ok mt-2" id="copyAllButton" type="button" >Copy</buttton>  
+                                </div>  
                             </form>
                             <!-- button -->
-                            <button id="generateSequence" type="button" class="btn_ok d-none">Genarate</button>
+                            <button  id="generateSequence" type="button" class="btn_ok d-none">Genarate</button>
                             <ul>
                                 <li>
                                     Keep the secrect security phrase in a safe place that always stay offline.
@@ -130,14 +157,15 @@
                                 </li>
                             </ul>
                         </div>
-
+                        
                     </div>
                 </div>
             </div>
         </div>
-
+        
     </section>
     <!-- main part end here  -->
+
 
     <div id="quiz">
         <div id="quiz-start-screen">
@@ -224,6 +252,33 @@
             ]
         });
     </script>
+      <script>
+        $(document).ready(function () {
+          $('#copyAllButton').on('click', function () {
+            var allPhrases = ''; // Initialize an empty string to store all phrases
+    
+            $('#securityPhrasesContainer').find('h4').each(function () {
+              allPhrases += $(this).text() + '\n'; // Concatenate each phrase with a line break
+            });
+    
+            // Create a temporary textarea to copy all phrases
+            var tempInput = $('<textarea>');
+            $('body').append(tempInput);
+            tempInput.val(allPhrases.trim()).select();
+    
+            // Copy all phrases to the clipboard
+            document.execCommand('copy');
+    
+            // Remove the temporary textarea
+            tempInput.remove();
+            $(".success_msg").css({"opacity":"1"});
+                setTimeout(function(){
+                    $(".success_msg").css({"opacity":"0"});
+                },1000);
+          });
+        });
+    
+      </script>
 
 
 
