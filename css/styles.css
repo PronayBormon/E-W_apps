@@ -429,11 +429,13 @@ a {
     transition: .4s all ease-in-out;
 }
 
-._net_btn.active i,.add_c.active i {
+._net_btn.active i,
+.add_c.active i {
     opacity: 1;
 }
 
-._net_btn,.add_c {
+._net_btn,
+.add_c {
     width: 100%;
     border: none;
     background: transparent;
@@ -3090,7 +3092,7 @@ footer {
     border-radius: 15px;
     padding: 20px 0px;
     background: #ffffff5c;
-    min-height: 90%;
+    /* min-height: 90%; */
 }
 
 .title_iden {
@@ -3275,6 +3277,7 @@ footer {
     border-radius: 5px;
     transform: rotate(35deg);
 }
+
 .guide_one .guid_text {
     background: #fff;
     margin: 10px;
@@ -3290,6 +3293,7 @@ footer {
     color: #000;
     font-size: 16px;
 }
+
 .guide_two {
     position: fixed;
     z-index: 99;
@@ -3300,6 +3304,7 @@ footer {
     top: 0;
     display: none;
 }
+
 .guide_two .guid_text {
     background: #fff;
     margin: 10px;
@@ -3315,6 +3320,7 @@ footer {
     color: #000;
     font-size: 16px;
 }
+
 .guide_two span {
     display: block;
     position: absolute;
@@ -3327,6 +3333,7 @@ footer {
     border-radius: 5px;
     transform: rotate(45deg);
 }
+
 .guide_three {
     position: fixed;
     z-index: 99;
@@ -3350,6 +3357,7 @@ footer {
     border-radius: 5px;
     transform: rotate(45deg);
 }
+
 .guide_three .guid_text {
     background: #fff;
     margin: 10px;
@@ -3368,3 +3376,41 @@ footer {
 
 
 /* ========= guide part css end here  ========= */
+
+
+
+/* quiz css part start here  */
+#quiz {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    background: #fff;
+    box-shadow: 0 0 10px #7e7676cc;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    /* margin: 20px; */
+}
+
+#quiz-start-screen {}
+
+#quiz-start-screen p {
+    color: #000;
+    font-size: 14px;
+    margin: 20px 0px;
+}
+
+#quiz-start-screen p a {}
+
+#quiz-counter {
+    text-align: center;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+#quiz-response {
+    color: #000;
+    margin: 10px;
+    font-size: 14px;
+}
