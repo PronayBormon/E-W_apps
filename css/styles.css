@@ -3401,7 +3401,12 @@ footer {
     margin: 20px 0px;
 }
 
-#quiz-start-screen p a {}
+#quiz-start-screen p a {
+    display: flex;
+    width: fit-content;
+    justify-content: end;
+    margin-left: auto;
+}
 
 #quiz-counter {
     text-align: center;
@@ -3413,4 +3418,9 @@ footer {
     color: #000;
     margin: 10px;
     font-size: 14px;
+}
+#quiz-buttons{
+    display: block;
+    width: fit-content;
+    margin-left: auto;
 }
